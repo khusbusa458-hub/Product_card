@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Cards</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f7;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 320px;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .image-box {
+      height: 180px;
+      background: #e3e8ee;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .image-placeholder {
+      width: 80px;
+      height: 80px;
+      background: #cbd3dc;
+      border-radius: 12px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .in-stock {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+    .out-stock {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="image-box">
+        <div class="image-placeholder"></div>
+      </div>
+      <div class="title">Wireless Headphones</div>
+      <div class="price">$129.99</div>
+      <div class="badge in-stock">In Stock</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="image-box">
+        <div class="image-placeholder"></div>
+      </div>
+      <div class="title">Mechanical Keyboard</div>
+      <div class="price">$89.99</div>
+      <div class="badge out-stock">Out of Stock</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="image-box">
+        <div class="image-placeholder"></div>
+      </div>
+      <div class="title">Smart Watch</div>
+      <div class="price">$199.99</div>
+      <div class="badge in-stock">In Stock</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
